@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio formularios</title>
+    <!--agregar estilos-->
+    <style>
+        body{ 
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color:rgb(255, 255, 255);
+            margin:0px;
+            padding:20px;
+           
+        }
+        .contenedor{
+            background-color:rgb(114, 212, 221);
+            width: 600px;
+            margin:auto;
+            padding:20px;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgb( 3 3 3 ) 
+                }
+               h1{
+                    text-align: center;
+            
+                }
+
+                label{
+                    display: block;
+                    margin: 10px 0px 5px;                   
+
+                }
+
+                input,textarea,select{
+                    width: 95%;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+
+                input[type="submit"] {
+                    background-color: rgb(160, 149, 226);
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+    </style>
+</head>
+<body>
+    
+<div class="contenedor">
+    <form action="#">
+        <h1>Formulario de contacto</h1>
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre de usuario" id="Nombre" minlength="3" maxlength="30" required>
+        <label for="Correo">Correo:</label>
+        <input type="email" name="Correo_usuario" id="correo">
+
+        <label for="telefono">Celular:</label>
+        <input type="tel" name="telefono" id="telefono">
+<br>
+        <label for="mensaje">Sugerencias</label>
+        <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+
+        <label for="nacionalidad">Selecciona tu pais</label>
+        <select name="nacionalidad"> 
+        <option value="Co">Colombia</option>
+        <option value="Ve">Venezuela</option>
+        <option value="Me">Mexico</option>
+        <option value="Ar">Argentina</option>
+        <option value="Bra">Brasil</option>
+        <option value="Es">España</option>
+        </select>
+
+        <input type="submit" value="Enviar informacion">
+    </form>
+</div>
+</body>
+</html>
